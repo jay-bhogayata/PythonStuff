@@ -177,4 +177,25 @@ print(5 | 7)
 
 # str to bin a = int( s1 , 2 )
 
-# ch7
+# comparision operators (<,>,<=,>=,==,!=)
+print(5 > 4)
+print(10 <= 2)
+
+age = 21
+if age > 18:
+    print("you are adult")
+else:
+    print("you are not adult")
+
+# if elif elif ... else
+
+num = 2
+if num < 2:
+    print("less then 2")
+elif num < 5:
+    print("less then 5")
+else:
+    print("gt or el to 5")
+
+
+# do if else ex of ch7
