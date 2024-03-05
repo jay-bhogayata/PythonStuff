@@ -199,3 +199,30 @@ else:
 
 
 # do if else ex of ch7
+
+
+# loops
+for i in range(0, 10):
+    print(i)
+
+for i in range(0, 11, 2):
+    print(i)
+
+# countdown using range
+for i in range(10, 0, -1):
+    print(i)
+
+for i in range(1, 4):
+    print(f"{i} square = {i * i}")
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True
+
+
+print(is_prime(7))
