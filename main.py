@@ -226,3 +226,50 @@ def is_prime(n):
 
 
 print(is_prime(7))
+
+# Lists(array in some language)
+
+my_fav_proglang = ["Python", "Go", "Javascript", "c"]
+
+user_names = [
+    "jay",
+    "kishan",
+    "john"
+]
+print(my_fav_proglang)
+print(user_names)
+
+# index start with 0
+print("index 0", my_fav_proglang[0])
+print("index 1", my_fav_proglang[-1])
+print("index 2", my_fav_proglang[-2])
+
+print("total programming language i love", len(my_fav_proglang))
+
+my_fav_proglang[-1] = "c++"
+print("My new List of fav prog lang", my_fav_proglang)
+
+my_fav_proglang.append("Java")
+
+print("My new List of fav prog lang", my_fav_proglang)
+
+print("pop from list")
+
+remove_lang = my_fav_proglang.pop()
+
+print("My new List of fav prog lang", my_fav_proglang,
+      f"now {remove_lang} is removed")
+
+nums = [1, 2, 3, 4, 5]
+# if we do not need index
+for num in nums:
+    print(num)
+
+for num in nums:
+    if num == 1:
+        print("Found 1")
+
+print(float('-inf'))
+print(float('+inf'))
+
+# ch 9 topic 16
