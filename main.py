@@ -297,6 +297,10 @@ l2 = ["c", "d"]
 print(l1+l2)
 
 prog_lang = ["c", "c++", "java", "python", "c#", "go", "ruby"]
+
+# reverse the list
+print(prog_lang[::-1])
+
 print("rust" in prog_lang)
 del prog_lang[-1]
 print(prog_lang)
@@ -304,3 +308,13 @@ del prog_lang[:1]  # remove c from list
 print(prog_lang)
 del prog_lang[:]  # del whole list
 print(prog_lang)
+
+
+# Tuples are collections of data that are ordered and unchangeable
+my_tuple = ("a", 34, False, 12.34)
+print(my_tuple)
+print(my_tuple[0])
+print(my_tuple[-1])
+
+# tuple with 1 item , watch for traling ,
+t1 = (1,)
