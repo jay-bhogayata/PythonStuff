@@ -272,4 +272,35 @@ for num in nums:
 print(float('-inf'))
 print(float('+inf'))
 
-# ch 9 topic 16
+
+def get_odd_numbers(num):
+    odd_numbers = []
+    for i in range(0, num):
+        if i % 2 == 1:
+            odd_numbers.append(i)
+    return odd_numbers
+
+
+print(get_odd_numbers(10))
+
+# slicing
+nums = [10, 20, 30, 40, 50, 60]
+print(nums[1:4:2])
+print(nums[1::2])
+print(nums[::2])
+print(nums[1:])
+print(nums[:2])
+print(nums[-5:])
+
+l1 = ["a", "b"]
+l2 = ["c", "d"]
+print(l1+l2)
+
+prog_lang = ["c", "c++", "java", "python", "c#", "go", "ruby"]
+print("rust" in prog_lang)
+del prog_lang[-1]
+print(prog_lang)
+del prog_lang[:1]  # remove c from list
+print(prog_lang)
+del prog_lang[:]  # del whole list
+print(prog_lang)
