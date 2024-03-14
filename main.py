@@ -370,3 +370,37 @@ d2 = {
 
 users_info = {**d1,**d2}
 print(users_info)
+
+# sets
+# order is not guaranteed
+nums = {1,2,3,4,5,1}
+print(type(nums))
+print(nums)
+
+nums.add(11)
+print(nums)
+
+# for creating empty set
+s = set()
+s.add("jay")
+s.add("john")
+print(s)
+s.remove("john")
+print(s)
+
+n = [1,1,35,56,75,35,67]
+
+def remove_duplicates(lst):
+    return {x for x in lst}
+
+print(remove_duplicates(n))
+
+# count vowels and return it
+def count_vowels(text):
+    count = 0
+    vowels = set()
+    for char in text:
+        if char.lower() in {"a","e","i","o","u"}:
+            count += 1
+            vowels.add(char)
+    return count,vowels
