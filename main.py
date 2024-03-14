@@ -404,3 +404,21 @@ def count_vowels(text):
             count += 1
             vowels.add(char)
     return count,vowels
+
+# Erros and exceptions
+
+try:
+    a = 10 / 0
+except Exception as e:
+    print(e)
+
+# raise Exception("something went wrong")
+
+"""
+try:
+    10/0
+except ZeroDivisionError:
+    print("0 division")
+except Exception as e:
+    print(e)
+"""
