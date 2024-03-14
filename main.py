@@ -318,3 +318,55 @@ print(my_tuple[-1])
 
 # tuple with 1 item , watch for traling ,
 t1 = (1,)
+
+# Dictionaries
+user = {
+    "name" : "jay",
+    "email" : "jay@gmail.com",
+}
+print(user)
+print(user['name'])
+
+for k , v in user.items():
+    print(k,v)
+
+# Because dictionaries rely on unique keys, you can't have two of the same key in the same dictionary. If you try to use the same key twice, the first value will simply be overwritten.
+
+names = ["jay b" , "john doe"]
+name_dict = {}
+
+for name in names:
+    name_last = name.split()
+    name_dict[name_last[0]] = name_last[1]
+
+print(name_dict)
+
+del name_dict["jay"]
+
+print(name_dict)
+
+name_dict["jay"] = "b"
+
+print(name_dict)
+
+# deleting key that not exits errors out
+
+user = {
+    "name" : "jay",
+    "email" : "jay@gmail.com",
+}
+
+print("name" in user)
+print("phone" in user)
+
+d1 = {
+    "name" : "jay",
+    "country": "IND"
+}
+
+d2 = {
+    "age" : 21
+}
+
+users_info = {**d1,**d2}
+print(users_info)
